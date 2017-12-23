@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uygulama</title>
+  <meta charset="utf-8">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+.yenikayit{
+  background-color: #B4FFFD;
+  color: white;
+}
+.facebook
+{
+  background-color:#0000bf;
+  color:white;
+}
+.youtube{
+  background-color:red;
+  color:white;
+}
+.twitter{
+  background-color:#56aaff;
+  color:white;
+}
+.instagram{
+  background-color:#7c3b7c;
+  color:white;
+}
+.google{
+  background-color:#f1e325;
+  color:white;
+}
+
+</style>
+</head>
+<body>
+
+
+<%=render 'shared/navbar' %>
+  <div class="Container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 hidden-xs">
+        <br><br>
+       <center>
+          <h2><%= t "site" %></h2>
+          <h3><br/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Google-favicon-2015.png/150px-Google-favicon-2015.png" width="25" heigth="25"><a href="https://www.google.com" target="_blank">&nbsp;GOOGLE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br/><br/>
+            <img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" width="25" heigth="25"><a href="https://www.facebook.com" target="_blank">&nbsp;FACEBOOK&nbsp;</a><br/><br/>
+            <img src="https://seeklogo.com/images/Y/youtube-logo-FF3BEE4378-seeklogo.com.png" width="25" heigth="25"><a href="https://www.youtube.com" target="_blank">&nbsp;YOUTUBE&nbsp;&nbsp;&nbsp;</a><br/><br/>
+            <img src="https://static.dezeen.com/uploads/2012/06/dezeen_twitter-bird.gif" width="25" heigth="25"><a href="https://www.twitter.com" target="_blank">&nbsp;TWITTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br/><br/>
+            <img src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" width="25" heigth="25"><a href="https://www.instagram.com" target="_blank">&nbsp;INSTAGRAM</a><br/><br/>
+          </h3>
+          <br><br>
+        
+          IP ADRESİNİZ<br>
+          <img src="http://in3.sitekodlari.com/ipadresi10.php" border="0" alt="ip adresi">
+        </center>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <br>
+                    
+            <%= yield %>
+                    
+      </div>
+      <div class="col-md-3 col-sm-3 hidden-xs">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      
+      
+        <img src="https://i1.imgiz.com/rshots/8924/sevilen-reklamlar-eti-reklamlari_8924348-1960_1280x720.jpg"  style="width:85%;"> <br><br>
+        <img src="http://www.dijitalajanslar.com/wp-content/themes/MagMan/timthumb.php?src=http://www.dijitalajanslar.com/wp-content/uploads/2013/12/teknosa-duygusal-reklam-filmi-hayat-cok-guzel.png&w=720&h=300&zc=1&q=80" style="width:85%;"> <br><br>
+        <img src="http://www.orbismedya.com/images/internet-reklamlari.jpg" style="width:85%;"> <br><br>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html> 
